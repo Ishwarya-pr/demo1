@@ -7,7 +7,7 @@ public class ValidateUserName {
 		System.out.println("enter the name: ");
 		String name= d.nextLine();
 		int n=name.length();
-		if( name==null || !name.contains("_job")||( n-4)<=8) {
+		if( name==null || !name.endsWith("_job")||( n-4)<=8) {
 			 return false;
 		}
 	
@@ -16,6 +16,7 @@ public class ValidateUserName {
 		return true;
 		
 		}
+		
 	}
 	public static void main(String[] args) {
 	
